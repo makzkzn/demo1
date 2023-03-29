@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>boxers.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+boxers.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">boxers {</span>
+
+    <span class="s2">//Известен вес бексера-любителя, что вес таков , что боксер может быть отнесен к одной из трёх весовых категорий:</span>
+    <span class="s2">// 1. легкий вес - до 60кг</span>
+    <span class="s2">// 2. средний вес - до 75кг</span>
+    <span class="s2">// 3. тяжёлый вес - до 91кг</span>
+    <span class="s2">// 4. сепертяжёлый вес - свыше 91кг.</span>
+    <span class="s2">// Определить в каой категироо будет выступать данный боксер.</span>
+
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">Scanner sc = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s0">int </span><span class="s1">weight = sc.nextInt()</span><span class="s0">;</span>
+        <span class="s1">sc.close()</span><span class="s0">;</span>
+
+        <span class="s0">if </span><span class="s1">(weight &gt;= </span><span class="s3">91</span><span class="s1">) {</span>
+            <span class="s1">System.out.println(</span><span class="s4">&quot;Супертяжёлый вес.&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span><span class="s0">else if </span><span class="s1">(weight &gt;= </span><span class="s3">75</span><span class="s1">) {</span>
+            <span class="s1">System.out.println(</span><span class="s4">&quot;Тяжелый вес.&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span><span class="s0">else if </span><span class="s1">(weight &gt;= </span><span class="s3">60</span><span class="s1">) {</span>
+            <span class="s1">System.out.println(</span><span class="s4">&quot;Средний вес.&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+             <span class="s1">System.out.println(</span><span class="s4">&quot;Лёгкий вес&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">}</span>
+            <span class="s1">}</span>
+
+        <span class="s1">}</span>
+
+
+
+
+</pre>
+</body>
+</html>
