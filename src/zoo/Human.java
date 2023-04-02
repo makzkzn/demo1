@@ -16,11 +16,17 @@ public abstract class Human {
 
     abstract void lunch();
 
-    abstract void watch();
+    void watch(Squirrels squirrels) {
+        if (squirrels.cage == "вне вольера") {
+            System.out.println("Белка поймана");
+            squirrels.cage = "в вольере";
+        } else {
+            System.out.println("Белка на месте");
+
+        }
+    }
 
     abstract void makeBandage();
 
-
-
-
 }
+

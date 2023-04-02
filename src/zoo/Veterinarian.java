@@ -12,13 +12,8 @@ public class Veterinarian extends Human {
             System.out.println("Ветеринар пообедал");
             hungry = false;
         } else {
-            System.out.println("втеринар ещё не голоден");
+            System.out.println("Ветеринар ещё не голоден");
         }
-    }
-
-    @Override
-    void watch() {
-
     }
 
     @Override
@@ -32,7 +27,8 @@ public class Veterinarian extends Human {
         }
 
     }
-    public Veterinarian(){
+
+    public Veterinarian() {
         profession = "Ветеринар";
 
     }
